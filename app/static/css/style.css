@@ -1,0 +1,38 @@
+body, html, p, ul, ol, ul li, ol li, dt, dl, dd, a, img, i, em, strong, b, table, tr, td, th, input, span, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a, hr {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /*a:hover{text-decoration: underline;}*/
+  ul li, ol li,li {
+    list-style: none;
+    float: left;
+  }
+  
+  img {
+    vertical-align: middle;
+    border: none;
+  }
+  
+  input {
+    cursor: pointer;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+
+  html {
+    font-size: 100px;
+  }
+  body{
+    font-size: 16px;
+    position: relative;
+    font-family: "楷体";
+  }
+  

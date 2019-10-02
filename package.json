@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1",
+    "mockjs": "^1.0.1-beta3"
   }
 }

@@ -1,0 +1,20 @@
+
+.wraper{
+    height: 100%;
+    width: 100%;
+    background: url(../images/bg7.jpg) -3rem;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.intro{
+    height: 1.5rem;
+    width: 80%;
+    margin-left: 10%;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 20%;
+}
+.intro img{
+    width: 100%;
+}
