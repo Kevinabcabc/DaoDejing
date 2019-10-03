@@ -59,19 +59,19 @@ gulp.task('server', function () {
 });
 
 
-// gulp.task('webserver', ()=>{
-//     gulp.src('./')//该文件夹是服务器的根路径
-//     .pipe(
-//       webserver({
-//         // host: '10.20.152.56',
-//         host: '192.168.0.102',
-//         port: '8080',
-//         livereload: true,//热更新
-//         directoryListing: true,//是否文件夹列表
-//         open: true,//打开浏览器
-//         // 中间件,拦截请求
-//         middleware: mockDataMiddleware
-//       })
-//     );
-//     gulp.watch('./app/**').on('change', server.reload); //监听变化，执行刷新 
-//   });
+gulp.task('webserver', ()=>{
+    gulp.src('./')//该文件夹是服务器的根路径
+    .pipe(
+      webserver({
+        // host: '10.20.152.56',
+        host: '192.168.0.102',
+        port: '8080',
+        livereload: true,//热更新
+        directoryListing: true,//是否文件夹列表
+        open: true,//打开浏览器
+        // 中间件,拦截请求
+        middleware: mockDataMiddleware
+      })
+    );
+    // gulp.watch('./app/**').on('change', server.reload); //监听变化，执行刷新 
+  });

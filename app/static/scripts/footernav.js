@@ -14,3 +14,16 @@
 //     $(this).addClass('active');
 
 // })
+
+
+
+$('.footer').on('touchstart','a.a',function(e){
+    e.preventDefault(); // 解决a标签长按出现菜单问题
+    console.log(1);
+
+});
+if ('addEventListener' in document) {
+	document.addEventListener('DOMContentLoaded', function() {
+		FastClick.attach(document.body);
+	}, false);
+}

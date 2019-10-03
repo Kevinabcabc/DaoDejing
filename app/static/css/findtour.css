@@ -1,55 +1,123 @@
-.header {
-  height: 1.32rem;
-  width: 100%;
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  text-align: center;
-  line-height: 1.32rem;
-  border-bottom: 0.01rem solid #ddd;
-}
-.header img {
-  width: 4rem;
-}
-
 .content {
   position: absolute;
   width: 100%;
   background: white;
-  top: 44px;
-  bottom: 49px;
-  overflow: hidden;
+  top: 1.32rem;
+  bottom: 1.47rem;
+  overflow: scroll;
 }
-
-.footer {
-  border-top: 0.01rem solid #ddd;
-  height: 1.47rem;
+.content .big-news {
+  height: 6rem;
   width: 100%;
-  background: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
+}
+.content .big-news .swiper-container {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.4rem;
+}
+.content .big-news .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.content .big-news .swiper-container .swiper-wrapper .swiper-slide {
+  box-sizing: border-box;
   text-align: center;
-  box-shadow: -0.02rem 0 0.02rem #ddd;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-.footer a {
-  color: #292929;
-  padding-top: 0.3rem;
-  width: 20%;
-}
-.footer a .iconfont {
+.content .big-news .swiper-container .swiper-wrapper .swiper-slide p {
+  color: white;
   font-size: 0.6rem;
 }
-.footer a p {
-  padding-top: 0.1rem;
-  font-size: 0.28rem;
-  font-weight: bolder;
+.content .big-news .swiper-container .swiper-wrapper .swiper-item1 {
+  background: url(https://images.pexels.com/photos/32246/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: contain;
 }
-.footer .active {
-  color: #f5936c;
+.content .big-news .swiper-container .swiper-wrapper .swiper-item2 {
+  background: url(https://images.pexels.com/photos/54320/rose-roses-flowers-red-54320.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: contain;
+}
+.content .big-news .swiper-container .swiper-wrapper .swiper-item3 {
+  background: url(https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+}
+.content .big-news .swiper-container .swiper-wrapper .swiper-item4 {
+  background: url(https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+}
+.content .jointour-box {
+  height: 4.2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.content .jointour-box .jointour-box-item {
+  height: 1.4rem;
+  width: 100%;
+  display: flex;
+  line-height: 1.4rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  border-bottom: 0.02rem solid #ddd;
+  padding: 0 0.4rem;
+}
+.content .jointour-box .jointour-box-item p {
+  font-size: 0.6rem;
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #292929;
+}
+.content .jointour-box .jointour-box-item p .iconfont {
+  font-size: 0.6rem;
+  padding-right: 0.4rem;
+}
+.content .jointour-box .top100 {
+  border-top: 0.02rem solid #ddd;
+}
+.content .we-need-your-idea {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content .we-need-your-idea span {
+  color: #555;
+  font-size: 0.6rem;
+  line-height: 3rem;
+}
+.content .we-need-your-idea span.iconfont {
+  color: #f3b925;
+  font-size: 2rem;
+  padding: 0 0.3rem;
+}
+.content .idea-send-btn {
+  height: 1rem;
+  width: 100%;
+  text-align: center;
+  line-height: 1rem;
+  margin-bottom: 0.4rem;
+}
+.content .idea-send-btn button {
+  width: 3rem;
+  height: 1rem;
+  display: inline-block;
+  border-radius: 0.1rem;
+  border: none;
+  background: #f3b925;
+  font-size: 0.5rem;
+  color: white;
 }

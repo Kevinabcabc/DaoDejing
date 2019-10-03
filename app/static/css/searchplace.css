@@ -1,0 +1,130 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.wrap header {
+  height: 1.32rem;
+  border-bottom: 0.03rem solid #ddd;
+  box-shadow: 0.03rem 0 0.03rem #ddd;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.32rem;
+  box-sizing: border-box;
+  /* padding: 0 0.4rem; */
+  font-size: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap header .iconfont {
+  font-size: 0.5rem;
+  transform: rotate(180deg);
+  padding: 0 0.4rem;
+}
+.wrap header .right {
+  visibility: hidden;
+}
+.wrap .searchbox {
+  height: 1.32rem;
+  box-sizing: border-box;
+  padding: 0 0.4rem;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .searchbox .search-input {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.1rem;
+  font-size: 0.4rem;
+  box-sizing: border-box;
+  padding: 0 0.4rem;
+}
+.wrap .searchbox .search {
+  height: 80%;
+  width: 16%;
+  font-size: 0.4rem;
+  background: #17c183;
+  border: none;
+  border-radius: 0.1rem;
+  color: white;
+}
+.wrap .slide-box {
+  width: 100%;
+  position: absolute;
+  top: 2.64rem;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.wrap .slide-box .list-items {
+  width: 100%;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrap .slide-box .list-items .item {
+  width: 100%;
+  background: white;
+  min-height: 2rem;
+  background: white;
+  border-radius: 0.1rem;
+  box-sizing: border-box;
+  margin: 0.2rem 0;
+  padding: 0.2rem 0.4rem;
+  border-bottom: 0.02rem solid #ddd;
+}
+.wrap .slide-box .list-items .item .user-add {
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .slide-box .list-items .item .user-add p {
+  font-size: 0.55rem;
+  color: #17c183;
+}
+.wrap .slide-box .list-items .item .user-add b {
+  font-size: 0.35rem;
+  color: #999;
+}
+.wrap .slide-box .list-items .item .user-add .list-id {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrap .slide-box .list-items .item .user-add .join {
+  height: 0.9rem;
+  width: 2.5rem;
+  border: none;
+  background: #17c183;
+  border-radius: 0.1rem;
+  font-size: 0.4rem;
+  color: white;
+}
+.wrap .slide-box .list-items .item .content {
+  padding: 0.2rem 0;
+}
+.wrap .slide-box .list-items .item .content p {
+  font-size: 0.48rem;
+  color: #333;
+}
+.wrap .slide-box .list-items .item .nav {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .slide-box .list-items .item .nav .nav-item {
+  line-height: 1rem;
+  font-size: 0.45rem;
+  color: #333;
+  color: #17c183;
+}
+.wrap .slide-box .list-items .item .nav .nav-item .iconfont {
+  font-size: 0.45rem;
+  color: #17c183;
+}
+.wrap .slide-box .list-items .item .nav .nav-item .people-num {
+  color: #fd5858;
+}

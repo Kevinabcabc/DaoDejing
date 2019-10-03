@@ -8,7 +8,7 @@
   z-index: 10;
   text-align: center;
   line-height: 1.32rem;
-  border-bottom: 0.01rem solid #ddd;
+  border-bottom: 0.02rem solid #ddd;
 }
 .header img {
   width: 4rem;
@@ -18,38 +18,7 @@
   position: absolute;
   width: 100%;
   background: white;
-  top: 44px;
-  bottom: 49px;
+  top: 1.32rem;
+  bottom: 1.47rem;
   overflow: hidden;
-}
-
-.footer {
-  border-top: 0.01rem solid #ddd;
-  height: 1.47rem;
-  width: 100%;
-  background: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  box-shadow: -0.02rem 0 0.02rem #ddd;
-}
-.footer a {
-  color: #292929;
-  padding-top: 0.3rem;
-  width: 20%;
-}
-.footer a .iconfont {
-  font-size: 0.6rem;
-}
-.footer a p {
-  padding-top: 0.1rem;
-  font-size: 0.28rem;
-  font-weight: bolder;
-}
-.footer .active {
-  color: #f5936c;
 }

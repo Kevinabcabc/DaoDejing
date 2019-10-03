@@ -10,42 +10,109 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/animate.min.css">
     <link rel="stylesheet" href="../static/css/findtour.css">
+    <link rel="stylesheet" href="../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/css/footernav.css">
 </head>
 
 <body>
 
 
     <header class="header">
+        <!-- <nav class="header-nav">
+            <span class="header-nav-big"></span>
+            <span class="header-nav-city"></span>
+            <span class="header-nav-top10"></span>
+        </nav> -->
         <img src="../static/images/logo.png" alt="">
     </header>
 
     <main class="content">
 
+        <div class="big-news">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-item1">
+
+                        <p>我去旅行，是因为我决定了要去，</p>
+                        <p>并不是因为对风景的兴趣。</p>
+
+                    </div>
+                    <div class="swiper-slide swiper-item2">
+                        <p>花开可要欣赏，然后就去远行。</p>
+                        <p>唯有不等花谢，才能记得花红。</p>
+                    </div>
+                    <div class="swiper-slide swiper-item3">
+                        <p>有酒可要满饮，然后就去远行。</p>
+                        <p>唯有不等大醉，才能觉得微醒。</p>
+                    </div>
+                    <div class="swiper-slide swiper-item4">
+                        <p>有情可要恋爱，然后就去远行。</p>
+                        <p>唯有恋得短暂，才能爱得永恒。</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+        </div>
+
+
+        <div class="jointour-box">
+
+            <div class="jointour-box-item top100">
+                <p><span class="iconfont icon-icranking"></span>Top100</p>
+                <p class="iconfont icon-jiantouyou"></p>
+            </div>
+
+            <div class="jointour-box-item search-near">
+                <p><span class="iconfont icon-fujin1"></span>发现附近旅行</p>
+                <p class="iconfont icon-jiantouyou"></p>
+            </div>
+            <div class="jointour-box-item search-endplace">
+                <p><span class="iconfont icon-fengjing1"></span>按目的地搜索</p>
+                <p class="iconfont icon-jiantouyou"></p>
+            </div>
+
+        </div>
+
+
+        <div class="we-need-your-idea">
+            <span>我们需要</span>
+            <span class="iconfont icon-idea5"></span>
+            <span>你的想法</span>
+        </div>
+
+        <div class="idea-send-btn">
+            <button class="send-idea">发送想法</button>
+        </div>
+
     </main>
 
 
     <footer class="footer">
-        <a href="findtour.html" class="active" data-id= "0">
+        <a href="findtour.html" class="active" data-id="0">
             <span class="iconfont icon-travel-tourism_sunbe"></span>
             <p>发现旅行</p>
         </a>
-        <a href="settour.html" data-id= "1">
+        <a href="settour.html" data-id="1">
             <span class="iconfont icon-travel-tourism_summe "></span>
             <p>创建旅行</p>
         </a>
-        <a href="mymess.html" data-id= "2">
+        <a href="mymess.html" data-id="2">
             <span class="iconfont icon-xiaoxi"></span>
             <p>我的消息</p>
         </a>
-        <a href="mine.html" data-id= "3">
+        <a href="mine.html" data-id="3">
             <span class="iconfont icon-gerenzhongxin4  "></span>
             <p>个人中心</p>
         </a>
     </footer>
 
-
+    <script src="../static/scripts/swiper.min.js"></script>
     <script src="../static/scripts/flexible.js"></script>
     <script src="../static/scripts/zepto.min.js"></script>
+    <script src="../static/scripts/fastclick.js"></script>
     <script src="../static/scripts/footernav.js"></script>
     <script src="../static/scripts/findtour.js"></script>
 </body>

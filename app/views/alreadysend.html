@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/font/iconfont.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/animate.min.css">
+    <!-- <link rel="stylesheet" href="../static/css/footernav.css"> -->
+
+    <style>
+        .wrap {
+            height: 100%;
+            width: 100%;
+            background: #17c183;
+            text-align: center;
+        }
+
+        h3{
+            font-size: 1rem;
+            padding-top: 3rem;
+            color: white;
+        }
+        p{
+            font-size: 0.5rem;
+            color: white;
+            padding-top: 0.5rem;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top: 0.5rem;
+            width: 3rem;
+            height: 1rem;
+            border: 0.04rem solid white;
+            border-radius: 0.5rem;
+            font-size: 0.5rem;
+            line-height: 1rem;
+            color: white;
+            background: #12a16d;
+            
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <h3>信息已发送</h3>
+        <p>我们将尽快联系您</p>
+
+        <button class="btn">关闭</button>
+
+
+    </div>
+
+
+
+    <script src="../static/scripts/flexible.js"></script>
+    <script src="../static/scripts/fastclick.js"></script>
+    <script src="../static/scripts/zepto.min.js"></script>
+    <!-- <script src="../static/scripts/footernav.js"></script> -->
+    <!-- <script src="../static/scripts/index.js"></script> -->
+
+    <script>
+        $('.btn').on('tap', function () {
+            window.open('findtour.html',"_self");
+        });
+
+    </script>
+</body>
+
+</html>
