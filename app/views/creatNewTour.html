@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iByfk3nGEoPUIxi2fe9yiPc988sE5FpB"></script> -->
     <link rel="stylesheet" href="../static/font/iconfont.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/animate.min.css">
-    <link rel="stylesheet" href="../static/css/searchplace.css">
-
-    <style>
-
-
-
-    </style>
+    <!-- <link rel="stylesheet" href="../static/css/footernav.css"> -->
+    <link rel="stylesheet" href="../static/css/creatNewTour.css">
+    
 
 </head>
 
@@ -27,40 +22,34 @@
         <header>
             <span class="iconfont icon-jiantouyou left"></span>
 
-            <span class="mid">搜索旅行</span>
+            <span class="mid">发布旅行</span>
 
             <span class="iconfont icon-jiantouyou right"></span>
 
         </header>
 
-        <div class="searchbox">
-            <input type="text" class="search-input" placeholder="搜索想去的地方">
-            <button class="search">搜索</button>
-        </div>
 
-        <div class="slide-box">
-            <div class="list-items">
-                
-            </div>
-            
-        </div>
+        <input type="text" name="endPlace" id="endPlace" placeholder="想去的地点">
+        <input type="text" name="userPlace" id="userPlace" placeholder="自己的位置">
 
+        <input type="datetime-local" name="time" id="time" placeholder="输入时间">
+
+        <textarea name="ideaOfTour" id="ideaOfTour" placeholder="说说自己的想法"></textarea>
+
+
+
+        <button class="send">发布</button>
 
 
     </div>
 
 
 
-    <script src="../static/scripts/iscroll-probe.js"></script>
     <script src="../static/scripts/flexible.js"></script>
     <script src="../static/scripts/fastclick.js"></script>
     <script src="../static/scripts/zepto.min.js"></script>
     <!-- <script src="../static/scripts/footernav.js"></script> -->
-    <script src="../static/scripts/api.js"></script>
-    <!-- <script src="../static/scripts/myscroll.js"></script> -->
-    <script src="../static/scripts/searchplace.js"></script>
-
-
+    <script src="../static/scripts/creatNewTour.js"></script>
 
 </body>
 

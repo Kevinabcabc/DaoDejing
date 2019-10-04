@@ -1,0 +1,87 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+}
+.wrap header {
+  height: 1.32rem;
+  border-bottom: 0.03rem solid #ddd;
+  box-shadow: 0.03rem 0 0.03rem #ddd;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.32rem;
+  box-sizing: border-box;
+  /* padding: 0 0.4rem; */
+  font-size: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap header .iconfont {
+  font-size: 0.5rem;
+  transform: rotate(180deg);
+  padding: 0 0.4rem;
+}
+.wrap header .right {
+  visibility: hidden;
+}
+.wrap #endPlace {
+  display: block;
+  height: 1.5rem;
+  width: 90%;
+  margin: 0.3rem 5%;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 0.4rem;
+  color: #333;
+  border-radius: 0.14rem;
+}
+.wrap #userPlace {
+  display: block;
+  height: 1.5rem;
+  width: 90%;
+  margin: 0.3rem 5%;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 0.4rem;
+  color: #333;
+  border-radius: 0.14rem;
+}
+.wrap #time {
+  display: block;
+  height: 1.5rem;
+  width: 90%;
+  margin: 0.3rem 5%;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 0.4rem;
+  color: #333;
+  border-radius: 0.14rem;
+  outline: none;
+}
+.wrap #ideaOfTour {
+  display: block;
+  height: 6rem;
+  width: 90%;
+  margin: 0.3rem 5%;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 0.4rem;
+  color: #333;
+  border-radius: 0.14rem;
+}
+.wrap .send {
+  display: block;
+  height: 1.5rem;
+  width: 90%;
+  margin: 0.3rem 5%;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 0.4rem;
+  color: white;
+  background: #17c183;
+  border: none;
+  border-radius: 0.14rem;
+}

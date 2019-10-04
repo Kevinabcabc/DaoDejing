@@ -5,4 +5,72 @@
   top: 1.32rem;
   bottom: 1.47rem;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 0.4rem;
+}
+.content .userInfo {
+  display: flex;
+  justify-content: center;
+}
+.content .userInfo .userPic {
+  width: 4rem;
+}
+.content .userInfo .userPic img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.content .userId {
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1.2rem;
+  font-size: 0.6rem;
+  padding-top: 0.2rem;
+}
+.content .followBox {
+  display: flex;
+  justify-content: space-between;
+  height: 1.3rem;
+  font-size: 0.5rem;
+  color: #333;
+  border-radius: 0.2rem;
+  margin: 0.2rem 0;
+  margin-top: 0;
+  padding: 0.2rem 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+.content .followBox .following {
+  flex: 1;
+}
+.content .followBox .following .followingNum {
+  font-size: 0.6rem;
+}
+.content .followBox .follower {
+  flex: 1;
+}
+.content .followBox .follower .followerNum {
+  font-size: 0.6rem;
+}
+.content .setting {
+  display: flex;
+  justify-content: space-between;
+  height: 1.2rem;
+  border-bottom: 0.02rem solid #ddd;
+  line-height: 1.2rem;
+  font-size: 0.5rem;
+}
+.content .setting .iconfont {
+  font-size: 0.5rem;
+}
+.content .logOut {
+  height: 1.2rem;
+  background: #f87f7f;
+  text-align: center;
+  line-height: 1.2rem;
+  color: white;
+  font-size: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 0.4rem 0;
 }

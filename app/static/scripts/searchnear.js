@@ -67,6 +67,10 @@ function loadingNewList() {
             // console.log(listHtml);
 
             $('.list-items').html(listHtml);
+
+            $('.join').on('tap', function () {
+                window.open('tourdetail.html', "_self");
+            });
         },
         fail: function () {
             console.log('请求失败');
@@ -74,21 +78,65 @@ function loadingNewList() {
     });
 }
 
-var myScroll = new IScroll('.slide-box', {
-    bounce: true,
-    freeScroll: true,
-    click: true,
-    tap: true,
-    mouseWheel: true,
-    probeType: 3, //1,2,3
-    startY: 0,
-});
 
 
-myScroll.on('scroll', function () {
-    console.log(myScroll);
-});
+setTimeout(loaded,500);
 
+
+function loaded(){
+
+    var myScroll = new IScroll('.slide-box', {
+        bounce: true,
+        freeScroll: true,
+        click: true,
+        tap: true,
+        scrollY: true,
+        mouseWheel: true,
+        probeType: 3, //1,2,3
+        startY: 0,
+    });
+    
+    
+    myScroll.on('scroll', function () {
+        console.log(myScroll.y);
+    });
+}
+
+
+// var myScroll = new IScroll('.slide-box', {
+//     // 常用的配置项
+//     // 弹簧效果 默认值为true
+//     bounce: true,
+//     // 点击和tap, 在iscroll中，click和tap都不能触发   默认值为false
+//     click: true,
+//     tap: true,
+
+//     // xy轴自由滚动   默认值为false
+//     freeScroll: true,
+//     // 显示滚动条
+//     scrollbars: true,
+//     fadeScrollbars: true,
+
+//     // x轴滚动   默认值为false
+//     // scrollX: true,  
+
+//     // Y轴滚动   默认值为true
+//     scrollY: true,
+
+
+//     // 滚动的起始位置
+//     startX: 0,
+//     startY: 0,
+
+
+//     // 正在滚动的侦听级别
+//     probeType: 3,//1,2,3
+
+//     // pc端需要将滚轮打开
+//     mouseWheel: true
+    
+    
+//   });
 
 
 

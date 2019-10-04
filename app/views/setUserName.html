@@ -111,12 +111,7 @@
         </header>
 
 
-        <input type="text" name="tittle" id="tittle" placeholder="标题">
-
-
-        <textarea name="content" id="content" placeholder="内容"></textarea>
-
-        <input type="email" name="email" id="email" placeholder="邮箱">
+        <input type="text" name="tittle" id="tittle" placeholder="输入新用户名">
         <button class="send">提交</button>
 
 
@@ -133,22 +128,12 @@
 
     <script>
         $('.left').on('tap', function () {
-            window.open('findtour.html',"_self");
+            window.open('mine.html',"_self");
         });
 
-
         $('.send').on('tap', function () {
-
-            console.log($('#email')[0].value);
-
-            localStorage.setItem("idea",JSON.stringify({
-                "email":$('#email')[0].value,
-                "tittle":$('#tittle')[0].value,
-                "content":$('#content')[0].value
-            }))
-
-
-            window.open('alreadysend.html',"_self");
+            localStorage.setItem("username",$('#tittle')[0].value);
+            window.open('mine.html',"_self");
         });
     </script>
 </body>

@@ -49,6 +49,53 @@ let map = {
     // 将序列化好的数据给客户端
     response.end(resultStr);
   },
+  '/api/already/list'(response){
+    // 需要拦截的请求
+    // 使用mock插件，伪造json数据
+    let result = Mock.mock({
+      'list|1-5': [
+        {
+          'id|+1': 1,
+          'endPlace':'@city',
+          // picUrl: '@image(300x180, @color)'
+          'time':'@date',
+          'funderName':'@cname',
+          'userPlace':'深圳',
+          'peopleNum|3-20':1
+        }
+      ] 
+    });
+    // 序列化json 
+    
+    let resultStr = JSON.stringify(result);
+    // 设置响应头
+    response.setHeader('Content-Type', 'application/json; charset=utf-8');
+    // 将序列化好的数据给客户端
+    response.end(resultStr);
+  },
+  '/api/detail/detail'(response){
+    // 需要拦截的请求
+    // 使用mock插件，伪造json数据
+    let result = Mock.mock({
+      'list': [
+        {
+          'endPlace':'@city',
+          'userPlace':'@city',
+          'time':'@date',
+          'funderName':'@cname',
+          'idea':'@cparagraph',
+          'peopleNum|3-20':1
+        }
+      ] 
+    });
+    // 序列化json 
+    
+    let resultStr = JSON.stringify(result);
+    // 设置响应头
+    response.setHeader('Content-Type', 'application/json; charset=utf-8');
+    // 将序列化好的数据给客户端
+    response.end(resultStr);
+  },
   '/api/goods/detail'(response){
     response.setHeader('Content-Type', 'application/json; charset=utf-8');
     let string = JSON.stringify({a: 1, b: 2});

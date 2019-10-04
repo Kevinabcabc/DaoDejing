@@ -11,6 +11,8 @@ $('.search').on('tap', function () {
     
 });
 
+
+
 function loadingNewList() {
     $.ajax({
         url: homeNearApi,
@@ -56,6 +58,11 @@ function loadingNewList() {
             // console.log(listHtml);
 
             $('.list-items').html(listHtml);
+            loaded();
+
+            $('.join').on('tap', function () {
+                window.open('tourdetail.html', "_self");
+            });
         },
         fail: function () {
             console.log('请求失败');
@@ -63,20 +70,28 @@ function loadingNewList() {
     });
 }
 
-var myScroll = new IScroll('.slide-box', {
-    bounce: true,
-    freeScroll: true,
-    click: true,
-    tap: true,
-    mouseWheel: true,
-    probeType: 3, //1,2,3
-    startY: 0,
-});
 
 
-myScroll.on('scroll', function () {
-    console.log(myScroll);
-});
+function loaded(){
+
+
+    var myScroll = new IScroll('.slide-box', {
+        bounce: true,
+        freeScroll: true,
+        click: true,
+        tap: true,
+        mouseWheel: true,
+        probeType: 3, //1,2,3
+        startY: 0,
+    });
+    
+    
+    // myScroll.on('scroll', function () {
+    //     console.log(myScroll);
+    // });
+
+}
+
 
 
 

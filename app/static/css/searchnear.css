@@ -36,13 +36,11 @@
   top: 6.32rem;
   bottom: 0;
   overflow: hidden;
-  transition: 0.5s;
 }
 .wrap .slide-box .list-items {
   width: 100%;
   padding: 0 0.4rem;
   box-sizing: border-box;
-  overflow: hidden;
 }
 .wrap .slide-box .list-items .item {
   width: 100%;

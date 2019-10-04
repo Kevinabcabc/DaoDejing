@@ -3,9 +3,12 @@ $('.left').on('tap', function () {
     window.open('findtour.html', "_self");
 });
 
+
+
 loadingNewList();
 
-function loadingNewList(){
+
+function loadingNewList() {
     $.ajax({
         url: homeBannerApi,
         success: function (data) {
@@ -18,7 +21,7 @@ function loadingNewList(){
             </div>
             `;
             for (var i = 0; i < data.length; i++) {
-    
+
                 listHtml += `
             <div class="item">
     
@@ -55,15 +58,21 @@ function loadingNewList(){
             `
             }
             // console.log(listHtml);
-    
+
             $('.list-items').html(listHtml);
+            MyFristScroll('.slide-box', {
+                loadmoreData: loadingNewList,
+            });
+
+            $('.join').on('tap', function () {
+                window.open('tourdetail.html', "_self");
+                console.log(1);
+
+            });
+
         },
         fail: function () {
             console.log('请求失败');
         }
     });
 }
-
-MyFristScroll('.slide-box', {
-    loadmoreData: loadingNewList,
-  });

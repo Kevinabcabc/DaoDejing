@@ -1,5 +1,3 @@
-
-
 .content {
     position: absolute;
     width: 100%;
@@ -7,5 +5,92 @@
     top: 1.32rem;
     bottom: 1.47rem;
     overflow: hidden;
-}
+    box-sizing: border-box;
+    padding: 0.4rem;
 
+    .userInfo {
+        display: flex;
+        justify-content: center;
+
+        .userPic {
+            width: 4rem;
+
+            img {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                // border: 0.02rem solid #ddd;
+                box-sizing: border-box;
+            }
+        }
+
+
+
+
+    }
+
+
+    .userId {
+        height: 1.2rem;
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: 0.6rem;
+        padding-top: 0.2rem;
+
+    }
+
+    .followBox {
+        display: flex;
+        justify-content: space-between;
+        height: 1.3rem;
+        font-size: 0.5rem;
+        color: #333;
+        // border: 1px solid #000;
+        border-radius: 0.2rem;
+        margin: 0.2rem 0;
+        margin-top: 0;
+        padding: 0.2rem 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+
+        .following {
+            flex: 1;
+            .followingNum {
+                font-size: 0.6rem;
+            }
+        }
+
+        .follower {
+            flex: 1;
+
+            .followerNum {
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+
+    .setting {
+        display: flex;
+        justify-content: space-between;
+        height: 1.2rem;
+        border-bottom: 0.02rem solid #ddd;
+        line-height: 1.2rem;
+        font-size: 0.5rem;
+
+        .iconfont {
+            font-size: 0.5rem;
+        }
+    }
+
+    .logOut {
+        height: 1.2rem;
+        background: rgb(248, 127, 127);
+        text-align: center;
+        line-height: 1.2rem;
+        color: white;
+        font-size: 0.5rem;
+        border-radius: 0.2rem;
+        margin: 0.4rem 0;
+    }
+}
