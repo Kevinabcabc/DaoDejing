@@ -5,5 +5,6 @@ var homeBannerApi = host + '/api/banner/list';
 var homeCityApi = host + '/api/city/list';
 var homeNearApi = host + '/api/near/list';
 var homeAlreadyApi = host + '/api/already/list';
+var homeMymessApi = host + '/api/mymess/list';
 var homeDetailApi = host + '/api/detail/detail';
 var homeFollowerApi = host + '/api/follower/detail';

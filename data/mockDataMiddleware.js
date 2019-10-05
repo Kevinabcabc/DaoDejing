@@ -94,6 +94,31 @@ let map = {
     // 将序列化好的数据给客户端
     response.end(resultStr);
   },
+
+  '/api/mymess/list'(response){
+    // 需要拦截的请求
+    // 使用mock插件，伪造json数据
+    let result = Mock.mock({
+      'list|3-10': [
+        {
+          'id|+1': 1,
+          imgUrl: '@image("300x300", "@color","#fff","PIC")',
+          endPlace: '@city',
+          'userName':'@cname',
+          'seconds|1-59':1,
+          'date':'@date',
+          'sentence':'@csentence',
+        }
+      ] 
+    });
+    // 序列化json 
+    
+    let resultStr = JSON.stringify(result);
+    // 设置响应头
+    response.setHeader('Content-Type', 'application/json; charset=utf-8');
+    // 将序列化好的数据给客户端
+    response.end(resultStr);
+  },
   '/api/detail/detail'(response){
     // 需要拦截的请求
     // 使用mock插件，伪造json数据

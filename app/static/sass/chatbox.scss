@@ -1,0 +1,89 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    header {
+        height: 1.32rem;
+        border-bottom: 0.03rem solid #ddd;
+        box-shadow: 0.03rem 0 0.03rem #ddd;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.32rem;
+        box-sizing: border-box;
+        /* padding: 0 0.4rem; */
+        font-size: 0.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        .iconfont {
+            font-size: 0.5rem;
+            transform: rotate(180deg);
+            padding: 0 0.4rem;
+        }
+
+        .right {
+            visibility: hidden;
+        }
+    }
+
+    .slide-box {
+
+        width: 100%;
+        position: absolute;
+        top: 1.32rem;
+        bottom: 1.5rem;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column-reverse;
+
+
+        .messbox{
+            height: 1.5rem;
+            text-align: right;
+            padding-right: 0.4rem;
+            .mess {
+                font-size: 0.5rem;
+                color: #333;
+                padding: 0.25rem;
+                background: #ddd;
+                border-radius: 0.2rem;
+            }
+        }
+
+
+
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1.5rem;
+        border-top: 0.02rem solid #ddd;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+
+        .write {
+            flex: 3;
+            border: none;
+            color: #333;
+            font-size: 0.45rem;
+            padding-left: 0.4rem;
+            outline: none;
+        }
+
+        .send {
+            width: 2rem;
+            height: 1.54rem;
+            background: #17c183;
+            border: 0.01rem solid #17c183;
+            color: white;
+            font-size: 0.4rem;
+            position: relative;
+            top: -0.04rem;
+        }
+    }
+
+}

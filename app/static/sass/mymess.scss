@@ -24,5 +24,50 @@
     top: 1.32rem;
     bottom: 1.47rem;
     overflow: hidden;
+    padding-top: 0.2rem;
+    .item{
+        height: 2.3rem;
+        width: 100%;
+        display: flex;
+        margin: 0.2rem 0 0.2rem 0.4rem;
+        box-sizing: border-box;
+        .userPic{
+            width: 2.3rem;
+            height: 2.3rem;
+            img{
+                border-radius: 0.2rem;
+                height: 90%;
+                width: 90%;
+            }
+        }
+        
+        .userMess{
+            flex: 1;
+            box-sizing: border-box;
+            margin:0 0.8rem 0 0.4rem;
+            border-bottom: 0.02rem solid #ddd;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            .tourInfo{
+                padding-top: 0.1rem;
+                line-height: 0.8rem;
+                font-size: 0.5rem;
+                color: #333;
+            }
+            .time{
+                font-size: 0.3rem;
+                color: #666;
+            }
+            .sentence{
+                line-height: 0.8rem;
+                height: 0.8rem;
+                font-size: 0.4rem;
+                color: #444;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+        }
+
+    }
 }
 
