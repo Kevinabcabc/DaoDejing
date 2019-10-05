@@ -1,0 +1,76 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.wrap header {
+  height: 1.32rem;
+  border-bottom: 0.03rem solid #ddd;
+  box-shadow: 0.03rem 0 0.03rem #ddd;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.32rem;
+  box-sizing: border-box;
+  /* padding: 0 0.4rem; */
+  font-size: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap header .iconfont {
+  font-size: 0.5rem;
+  transform: rotate(180deg);
+  padding: 0 0.4rem;
+}
+.wrap header .right {
+  visibility: hidden;
+}
+.wrap .slide-box {
+  width: 100%;
+  position: absolute;
+  top: 1.32rem;
+  bottom: 0;
+  overflow: hidden;
+}
+.wrap .slide-box .loading-top {
+  line-height: 1.32rem;
+  border-bottom: 0.02rem solid #ddd;
+  border-top: 0.02rem solid #ddd;
+  text-align: center;
+  font-size: 0.35rem;
+  color: #999;
+}
+.wrap .slide-box .list-items {
+  width: 100%;
+  padding: 0 0 0 0.4rem;
+  box-sizing: border-box;
+}
+.wrap .slide-box .list-items .item {
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0;
+  border-bottom: 0.02rem solid #ddd;
+}
+.wrap .slide-box .list-items .item .left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.wrap .slide-box .list-items .item .left img {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.2rem;
+  margin-right: 0.4rem;
+}
+.wrap .slide-box .list-items .item .left p {
+  font-size: 0.58rem;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrap .slide-box .list-items .item .right {
+  width: 1.5rem;
+}
+.wrap .slide-box .list-items .item .right .iconfont {
+  color: #333;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}

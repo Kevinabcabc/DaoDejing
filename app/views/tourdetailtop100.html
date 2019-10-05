@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iByfk3nGEoPUIxi2fe9yiPc988sE5FpB">
+    </script>
+    <link rel="stylesheet" href="../static/font/iconfont.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/animate.min.css">
+    <link rel="stylesheet" href="../static/css/tourdetail.css">
+
+    <style>
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <header>
+            <span class="iconfont icon-jiantouyou left"></span>
+
+            <span class="mid">详细信息</span>
+
+            <span class="iconfont icon-jiantouyou right"></span>
+
+        </header>
+
+        <div class="searchbox" id="allmap">
+
+        </div>
+
+        <div class="slide-box">
+            <div class="detail">
+                <!-- <p><span class="iconfont icon-jingdian"></span> <span class="endCityName">巴黎</span></p>
+                <p><span class="iconfont icon-weizhi"></span> <span class="endCityName">深圳</span></p>
+                <p><span class="iconfont icon-shijian5 "></span> <span class="time">2019-5-9</span></p>
+                <p><span class="iconfont icon-gerenzhongxin2"></span> <span class="time">这个ID可以很长很长</span></p>
+                <p class="idea"><span class="iconfont icon--idea"></span> <span class="time">我去旅行是因为我决定了去，并不是对风景的兴趣</span></p>
+                <p class="bottom-border" ><span class="iconfont icon-renshutongji "></span> <span class="time">8人</span></p>
+                <p class="join-now-box"><span class="join-now">立即加入</span></p> -->
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="../static/scripts/iscroll-probe.js"></script>
+    <script src="../static/scripts/flexible.js"></script>
+    <script src="../static/scripts/fastclick.js"></script>
+    <script src="../static/scripts/zepto.min.js"></script>
+    <!-- <script src="../static/scripts/footernav.js"></script> -->
+    <script src="../static/scripts/api.js"></script>
+    <!-- <script src="../static/scripts/myscroll.js"></script> -->
+    <script src="../static/scripts/tourdetail.js"></script>
+    <script>
+        $('.left').on('tap', function () {
+            window.open('top100.html', "_self");
+        });
+        loadingNewList();
+    </script>
+
+
+</body>
+
+</html>

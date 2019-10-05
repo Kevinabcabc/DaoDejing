@@ -69,7 +69,7 @@ function loadingNewList() {
             $('.list-items').html(listHtml);
 
             $('.join').on('tap', function () {
-                window.open('tourdetail.html', "_self");
+                window.open('tourdetailnear.html', "_self");
             });
         },
         fail: function () {

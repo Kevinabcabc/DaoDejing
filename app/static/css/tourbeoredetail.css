@@ -1,0 +1,75 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.wrap header {
+  height: 1.32rem;
+  border-bottom: 0.03rem solid #ddd;
+  box-shadow: 0.03rem 0 0.03rem #ddd;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.32rem;
+  box-sizing: border-box;
+  /* padding: 0 0.4rem; */
+  font-size: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap header .iconfont {
+  font-size: 0.5rem;
+  transform: rotate(180deg);
+  padding: 0 0.4rem;
+}
+.wrap header .right {
+  visibility: hidden;
+}
+.wrap .searchbox {
+  height: 5rem;
+  border-bottom: 0.02rem solid #ddd;
+  box-sizing: border-box;
+  color: #999;
+  font-size: 0.3rem;
+}
+.wrap .slide-box {
+  width: 100%;
+  position: absolute;
+  top: 6.32rem;
+  bottom: 0;
+  overflow: hidden;
+}
+.wrap .slide-box .detail {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 0.5rem;
+}
+.wrap .slide-box .detail p {
+  min-height: 1.5rem;
+  padding: 0 0.4rem;
+  border-bottom: 0.01rem solid #999;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wrap .slide-box .detail p .iconfont {
+  font-size: 0.6rem;
+  padding-right: 0.2rem;
+}
+.wrap .slide-box .detail p.idea {
+  position: relative;
+  min-height: 1.5rem;
+  line-height: 1rem;
+  padding: 0.3rem 1.3rem;
+}
+.wrap .slide-box .detail p.idea .iconfont {
+  position: absolute;
+  left: 0.4rem;
+}
+.wrap .slide-box .detail p.bottom-border {
+  border: none;
+}
+.wrap .slide-box .detail p.join-now-box {
+  border: none;
+  color: white;
+  background: #17c183;
+  text-align: center;
+}

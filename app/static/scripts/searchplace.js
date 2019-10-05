@@ -61,7 +61,7 @@ function loadingNewList() {
             loaded();
 
             $('.join').on('tap', function () {
-                window.open('tourdetail.html', "_self");
+                window.open('tourdetailsearch.html', "_self");
             });
         },
         fail: function () {

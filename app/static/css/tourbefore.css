@@ -1,0 +1,114 @@
+.header {
+  height: 1.32rem;
+  border-bottom: 0.03rem solid #ddd;
+  box-shadow: 0.03rem 0 0.03rem #ddd;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.32rem;
+  box-sizing: border-box;
+  /* padding: 0 0.4rem; */
+  font-size: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header .iconfont {
+  font-size: 0.5rem;
+  transform: rotate(180deg);
+  padding: 0 0.4rem;
+}
+.header .right {
+  visibility: hidden;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  background: white;
+  top: 1.32rem;
+  bottom: 0;
+  overflow: hidden;
+}
+.content .list-items {
+  padding-bottom: 2rem;
+}
+.content .list-items .item {
+  height: 4.8rem;
+  width: 94%;
+  margin: 0.2rem 3%;
+  background: #4cc599;
+  border-radius: 0.15rem;
+  box-sizing: border-box;
+  padding: 0.2rem;
+}
+.content .list-items .item .user-add {
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .list-items .item .user-add p {
+  font-size: 0.55rem;
+  color: white;
+}
+.content .list-items .item .user-add b {
+  font-size: 0.35rem;
+  color: white;
+  font-weight: normal;
+}
+.content .list-items .item .user-add .list-id {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content .list-items .item .user-add .iconfont {
+  color: white;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  padding-right: 0.3rem;
+}
+.content .list-items .item .user-add .join {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  width: 2.5rem;
+  background: #00c57d;
+  border-radius: 0.1rem;
+  font-size: 0.4rem;
+  border: 0.04rem solid white;
+  color: white;
+  position: relative;
+  top: -0.1rem;
+}
+.content .list-items .item .tour-info {
+  padding: 0.6rem 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.content .list-items .item .tour-info p {
+  font-size: 0.4rem;
+  color: white;
+}
+.content .list-items .item .tour-info p .tour-founder {
+  font-size: 0.55rem;
+  padding: 0.2rem;
+}
+.content .list-items .item .tour-info .iconfont {
+  color: white;
+  font-size: 0.5rem;
+}
+.content .list-items .item .nav {
+  display: flex;
+  width: 100%;
+  height: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .list-items .item .nav .nav-item {
+  line-height: 1rem;
+  font-size: 0.45rem;
+  color: white;
+}
+.content .list-items .item .nav .nav-item .iconfont {
+  font-size: 0.45rem;
+  color: white;
+}
+.content .list-items .item .nav .nav-item .people-num {
+  color: white;
+}

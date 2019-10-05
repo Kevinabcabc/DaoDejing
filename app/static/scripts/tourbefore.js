@@ -1,4 +1,7 @@
+$('.left').on('tap', function () {
+    window.open('mine.html', "_self");
 
+});
 loadingNewList();
 function loadingNewList() {
     $.ajax({
@@ -27,7 +30,7 @@ function loadingNewList() {
                 </div>
 
                 <div class="tour-info">
-                    <p>发起人：<span class="tour-founder">${localStorage.getItem('username')}</span></p>
+                    <p>发起人：<span class="tour-founder">${data[i].funderName}</span></p>
                     <span class="iconfont icon-tianjiajiaose">关注</span>
 
                 </div>
@@ -44,11 +47,6 @@ function loadingNewList() {
             </div>
            `
             }
-            listHtml +=`
-            <div class="add-new-tour">
-                <span class="iconfont icon-add"></span>
-            </div>
-            `
 
             // console.log(listHtml);
 
@@ -57,7 +55,7 @@ function loadingNewList() {
             loaded();
 
             $('.join').on('tap', function () {
-                window.open('tourGroup.html', "_self");
+                window.open('tourbeforedetail.html', "_self");
 
             });
             $('.add-new-tour').on('tap', function () {

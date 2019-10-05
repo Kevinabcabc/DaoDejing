@@ -7,7 +7,7 @@
 
 
 $('.left').on('tap', function () {
-    window.open('findtour.html', "_self");
+    window.open('tourbefore.html', "_self");
 });
 loadingNewList();
 

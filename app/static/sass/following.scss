@@ -1,0 +1,98 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    header {
+        height: 1.32rem;
+        border-bottom: 0.03rem solid #ddd;
+        box-shadow: 0.03rem 0 0.03rem #ddd;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.32rem;
+        box-sizing: border-box;
+        /* padding: 0 0.4rem; */
+        font-size: 0.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        .iconfont {
+            font-size: 0.5rem;
+            transform: rotate(180deg);
+            padding: 0 0.4rem;
+        }
+
+        .right {
+            visibility: hidden;
+        }
+    }
+
+    .slide-box {
+
+        width: 100%;
+        position: absolute;
+        top: 1.32rem;
+        bottom: 0;
+        overflow: hidden;
+
+        .loading-top {
+            line-height: 1.32rem;
+            // background: #eee;
+            border-bottom: 0.02rem solid #ddd;
+            border-top: 0.02rem solid #ddd;
+            text-align: center;
+            font-size: 0.35rem;
+            color: #999;
+        }
+
+
+        .list-items {
+            width: 100%;
+            padding: 0 0 0 0.4rem;
+            box-sizing: border-box;
+            // background: yellow;
+            // overflow: hidden;
+
+
+            .item {
+                height: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                padding: 0.2rem 0;
+                border-bottom: 0.02rem solid #ddd;
+                .left {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        border-radius: 0.2rem;
+                        margin-right: 0.4rem;
+                    }
+
+                    p{
+                        font-size: 0.58rem;
+                        color: #333;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                }
+
+                .right {
+                    width: 2rem;
+
+                    .care {
+                        color: #333;
+                        font-size: 0.5rem;
+                        line-height: 1.5rem;
+                        background: #17c183;
+                        color: white;
+                        border-radius: 0.6rem;
+                        padding: 0.2rem 0.4rem;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

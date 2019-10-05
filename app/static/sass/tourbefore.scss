@@ -1,0 +1,138 @@
+.header {
+    height: 1.32rem;
+    border-bottom: 0.03rem solid #ddd;
+    box-shadow: 0.03rem 0 0.03rem #ddd;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.32rem;
+    box-sizing: border-box;
+    /* padding: 0 0.4rem; */
+    font-size: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    .iconfont {
+        font-size: 0.5rem;
+        transform: rotate(180deg);
+        padding: 0 0.4rem;
+    }
+
+    .right {
+        visibility: hidden;
+    }
+}
+.content {
+    position: absolute;
+    width: 100%;
+    background: white;
+    top: 1.32rem;
+    bottom: 0;
+    overflow: hidden;
+
+
+    .list-items {
+        padding-bottom: 2rem;
+
+        .item {
+            height: 4.8rem;
+            width: 94%;
+            margin: 0.2rem 3%;
+            background: #4cc599;
+            border-radius: 0.15rem;
+            box-sizing: border-box;
+            padding: 0.2rem;
+
+            .user-add {
+                display: flex;
+                width: 100%;
+                height: 1.5rem;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-size: 0.55rem;
+                    color: white;
+                }
+
+                b {
+                    font-size: 0.35rem;
+                    color: white;
+                    font-weight: normal;
+                }
+
+                .list-id {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                .iconfont {
+                    color: white;
+                    font-size: 0.9rem;
+                    line-height: 0.9rem;
+                    padding-right: 0.3rem;
+                }
+
+                .join {
+                    height: 0.9rem;
+                    line-height: 0.9rem;
+                    width: 2.5rem;
+                    background: #00c57d;
+                    border-radius: 0.1rem;
+                    font-size: 0.4rem;
+                    border: 0.04rem solid white;
+                    color: white;
+                    position: relative;
+                    top: -0.1rem;
+                }
+            }
+
+            .tour-info {
+                padding: 0.6rem 0.2rem;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    font-size: 0.4rem;
+                    color: white;
+
+                    .tour-founder {
+                        // background: #00c57d;
+                        // border-radius: 0.1rem;
+                        font-size: 0.55rem;
+                        padding: 0.2rem;
+                        // border: 0.04rem solid white;
+
+                    }
+                }
+
+                .iconfont {
+                    color: white;
+                    font-size: 0.5rem;
+
+                }
+            }
+
+            .nav {
+                display: flex;
+                width: 100%;
+                height: 1rem;
+                justify-content: space-between;
+                align-items: center;
+
+                .nav-item {
+                    line-height: 1rem;
+                    font-size: 0.45rem;
+                    color: white;
+
+                    .iconfont {
+                        font-size: 0.45rem;
+                        color: white;
+                    }
+
+
+                    .people-num {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

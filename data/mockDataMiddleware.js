@@ -73,6 +73,27 @@ let map = {
     // 将序列化好的数据给客户端
     response.end(resultStr);
   },
+
+  '/api/follower/detail'(response){
+    // 需要拦截的请求
+    // 使用mock插件，伪造json数据
+    let result = Mock.mock({
+      'list|8-20': [
+        {
+          'id|+1': 1,
+          picUrl: '@image("300x300", "@color","#fff","PHOTO")',
+          'username':'@cname',
+        }
+      ] 
+    });
+    // 序列化json 
+    
+    let resultStr = JSON.stringify(result);
+    // 设置响应头
+    response.setHeader('Content-Type', 'application/json; charset=utf-8');
+    // 将序列化好的数据给客户端
+    response.end(resultStr);
+  },
   '/api/detail/detail'(response){
     // 需要拦截的请求
     // 使用mock插件，伪造json数据
